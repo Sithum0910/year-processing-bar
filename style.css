@@ -1,0 +1,48 @@
+body {
+    /* Black UI */
+    background-color: #000;
+    
+    /* "Robot Text" font from Google Fonts */
+    font-family: 'VT323', monospace;
+    
+    /* This centers everything on the page */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden; /* Hides scrollbars */
+}
+
+.progress-container {
+    text-align: center;
+    width: 80%;
+    max-width: 700px;
+}
+
+.progress-bar-outline {
+    /* The white outline, just like your video */
+    border: 3px solid #FFF; 
+    width: 100%;
+    height: 40px;
+    padding: 4px;
+    box-sizing: border-box; 
+    margin-bottom: 20px;
+}
+
+#progress-bar-filler {
+    height: 100%;
+    width: 0%; /* JavaScript will change this */
+    
+    /* Default color (purple like 2025 in your video) */
+    background-color: #8A2BE2; 
+    
+    /* Makes the bar animate smoothly when it updates */
+    transition: width 0.5s linear, background-color 0.5s linear;
+}
+
+#progress-text {
+    color: #FFF;
+    font-size: 2.5rem; /* Large robot text */
+    text-shadow: 0 0 5px #FFF; /* Adds a slight glow */
+}
